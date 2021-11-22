@@ -1,0 +1,300 @@
+@charset "utf-8";
+    /**
+  **************************************************************************************************
+  **********  CLPHP订单系统2017 WEB、WAP自适应版官方正式版  *****  官方正版 *** 版权所有 *** 盗版必究  **********
+  **********------------------------------------------------------------------------------**********
+  * 官方网站：http://www.chunleinet.com/ 官方店铺：http://jxlcl.taobao.com/  *  官方店铺旺旺:chunlei2615 请认准再购买 *
+  **************************************************************************************************
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: 14px Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+	color: #000;
+	text-align: left;
+}
+a:link, a:visited {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #F00;
+}
+input, select, textarea {
+	font: 100% Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+}
+em {
+	font-style: normal;
+	color: #F00;
+	margin-right: 5px;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+.red {
+	color: #F00;
+}
+.blue {
+	color: #09F;
+}
+.green {
+	color: #090;
+}
+.nomar {
+	margin: 0;
+}
+#clorder {
+	margin: 0 auto;
+}
+.clwarp {
+	width: auto;
+	height: 100%;
+}
+.cltitle {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 15px;
+	background: #E0E0E0;
+}
+.cltitle span {
+	display: block;
+	float: left;
+	width: 33%;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	font-size: 16px;
+	text-align: center;
+}
+.sku_ul, .sku_ul_na, .sku_ul_nb, .sku_ul_nc {
+	clear: left;
+}
+.sku_ul li, .sku_ul_na li, .sku_ul_nb li, .sku_ul_nc li {
+	display: inline-block;
+	_zoom: 1;
+*display:inline;
+	margin: 0 6px 6px 0;
+}
+.sku_ul li a, .sku_ul_na li a, .sku_ul_nb li a, .sku_ul_nc li a {
+	height: 28px;
+	line-height: 28px;
+	padding: 0 15px;
+	border: 1px solid #E0E0E0;
+	display: inline-block;
+}
+.sku_ul_nb li a {
+	height: 42px;
+	line-height: 42px;
+	padding: 0 15px;
+	border: 1px solid #E0E0E0;
+	display: inline-block;
+}
+.sku_ul li .sku_cur, .sku_ul_na li .skuna_cur, .sku_ul_nb li .skunb_cur, .sku_ul_nc li .skunc_cur {
+	border: 1px solid #C30008;
+	color: #F00;
+	background: url(../images/on.png) right bottom no-repeat;
+}
+.clwarp label.clbdxx {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 22%;
+	text-align: right;
+	padding-top: 3px;
+	padding-right: 3%;
+}
+.cldxbox, .clxlbox, .cltextbox, .cltextmun, .cltextarea, .clpayps {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 75%;
+}
+.cltextbox input, .cltextmun input, .clxlbox select.clxl, .clxlbox select.clcpxl, .clxlbox select.cldqxl, .cltextarea textarea, .cltextcode input {
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.cldxbox p {
+	width: 92%;
+	line-height: 1.6em;
+	margin-bottom: 3px;
+}
+.cldxbox p img {
+	margin-left: 6px;
+	margin-top: -5px;
+}
+.cldxbox span.paybr {
+	display: inline-block;
+	margin: 0 5px 3px 0;
+}
+.clbdbox {
+	float: left;
+	width: 100%;
+	margin-bottom: 8px;
+*margin-bottom:7px;
+}
+.cldxbox label {
+	margin-left: 6px;
+	cursor: pointer;
+}
+.cldxbox input {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+.cltextbox input, .cltextmun input, .cltextcode input {
+	float: left;
+	width: 92%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #666;
+	padding: 2px 5px;
+}
+.cltextbox input.smscode {
+	width: 40%;
+	height: 30px;
+	padding: 0;
+	margin-left: 3%;
+	font-size: 13px;
+	color: #FFF;
+	cursor: pointer;
+	-webkit-appearance: none;
+	border: 1px solid #6C6;
+	background: #6C6;
+}
+.cltextmun input, .cltextcode input {
+	width: 50px;
+	height: 20px;
+	text-align: center;
+}
+.cltextmun input {
+	border-width: 1px 0;
+}
+.cltextmun a.setmun {
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font: 16px Verdana;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #E0E0E0;
+	background: url(../images/jjh.gif) no-repeat;
+}
+.cltextmun a.jian {
+	background-position: 0 0;
+}
+.cltextmun a.jia {
+	background-position: -24px 0;
+	margin-right: 15px;
+}
+.cltextmun span {
+	display: block;
+	float: left;
+	margin: 3px 0 0 0;
+}
+.cltextmun span.unit {
+	margin: 3px 5px 0;
+}
+em#showmun, em#showprice, em.clrmb {
+	display: block;
+	float: left;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 700;
+	color: #F40;
+	margin-top: 3px;
+}
+.clxlbox select.clxl {
+	padding: 1px;
+}
+.clxlbox select.clcpxl {
+	padding: 3px;
+}
+.clxlbox select.cldqxl {
+	width: 29.6%;
+	padding: 4px 2px;
+	margin-right: 6px;
+}
+.clpayfs {
+	width: 95%;
+	margin-top: 3px;
+}
+.clpayps {
+	font-size: 12px;
+	color: #666;
+	padding-left: 25%;
+	line-height: 1.6em;
+}
+.clpayps p {
+	display: block;
+	float: left;
+	width: 92%;
+	padding: 2px 5px;
+	_margin-left: -3px;
+	border: 1px solid #f6cb84;
+	background: #fffeed;
+}
+.cltextarea textarea {
+	width: 92%;
+	height: 40px;
+	color: #666;
+	padding: 5px;
+}
+.cltextcode img#clcode {
+	vertical-align: middle;
+	cursor: pointer;
+}
+.cltextcode a.yzmps {
+	font-size: 12px;
+	margin-left: 6px;
+}
+.clsubbox {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.clsubbox input {
+	width: 95%;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	font-size: 16px;
+	cursor: pointer;
+	border: 0;
+	-webkit-appearance: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.clfahuo {
+	width: 90%;
+	height: 200px;
+	font-size:12px;
+	line-height:1.8em;
+	color: #666;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	padding-left: 20px;
+}
+.phpyzm {
+	width: 50px;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	padding: 0 5px;
+	border: 1px solid #E0E0E0;
+	background: #FAFAFA;
+}

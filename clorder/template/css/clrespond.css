@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@media(max-width:749px) {
+.clrxian {
+	border: none;
+}
+.clorderr {
+	height: 240px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.clfahuo {
+	padding-bottom: 20px;
+}
+}
+
+@media(max-width:480px) {
+.clwarp {
+	border: 0;
+}
+.crxian {
+	border: none;
+}
+.clsubbox input {
+	width: 96%;
+}
+}
+
+/*///////////////////////////////////////// clORDERCSSEND ////////////////////////////////////////*/

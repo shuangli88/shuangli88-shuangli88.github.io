@@ -1,0 +1,309 @@
+@charset "utf-8";
+    /**
+  **************************************************************************************************
+  **********  CLPHP订单系统2017 WEB、WAP自适应版官方正式版  *****  官方正版 *** 版权所有 *** 盗版必究  **********
+  **********------------------------------------------------------------------------------**********
+  * 官方网站：http://www.chunleinet.com/ 官方店铺：http://jxlcl.taobao.com/  *  官方店铺旺旺:chunlei2615 请认准再购买 *
+  **************************************************************************************************
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: 14px Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+	color: #000;
+	text-align: left;
+}
+a:link, a:visited {
+	color: #66C2FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+input, select, textarea {
+	font: 100% Microsoft YaHei, \5FAE\8F6F\96C5\9ED1, SimSun, \5B8B\4F53, Arial, Verdana;
+}
+em {
+	font-style: normal;
+	color: #F00;
+	margin-right: 5px;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+.red {
+	color: #F00;
+}
+.nomar {
+	margin: 0;
+}
+#clorder {
+	min-width: 300px;
+	margin: 0 auto;
+}
+.clwarp {
+	width: auto;
+	height: 100%;
+}
+.cltitle {
+	font-size: 16px;
+	color: #FFF;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	padding: 8px;
+}
+.clwarp label.clbdxx {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 24%;
+	text-align: right;
+	padding-right: 3%;
+}
+.clwarp label.clbdxxcp {
+	float: left;
+	display: block;
+	width: 95%;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 5%;
+}
+.cldxbox, .clxlbox, .cltextbox, .cltextarea, .cltextcode {
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 73%;
+}
+.cldxbox {
+	width: 70%;
+	padding: 0 3% 0 0;
+}
+.cldxbox, .cltextarea {
+	line-height: 1.5em;
+}
+.clbdbox {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+*margin-bottom:7px;
+}
+.cldxboxcp label {
+	margin-left: 6px;
+	cursor: pointer;
+}
+.cldxbox input {
+	margin: 0 0 0 1px;
+}
+.cldxbox label {
+	margin-left: 6px;
+	cursor: pointer;
+}
+.cldxbox span.paybr {
+	display: inline-block;
+}
+.cltextbox input, .cltextmun input, .cltextcode input {
+	width: 90%;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	padding: 0 5px;
+	border: 1px solid #E0E0E0;
+	background: #FAFAFA;
+}
+.cltextbox input.smscode {
+	width: 57%;
+	height: 26px;
+	color: #FFF;
+	font-size: 13px;
+	margin-left: 3%;
+	border-color: #6C6;
+	background: #6C6;
+	cursor: pointer;
+}
+.cltextmun input, .cltextcode .cltext {
+	float: left;
+	width: 50px;
+	text-align: center;
+}
+.cltextmun input {
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	padding: 0;
+	border: none;
+	background: none;
+}
+.cltextmun .cltextmi {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0;
+	border: solid #E0E0E0;
+	border-width: 1px 0;
+	background: #FFF;
+}
+.cltextmun a.setmun {
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font: 16px Verdana;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #E0E0E0;
+	background: url(../images/jjh.gif) no-repeat;
+}
+.cltextmun a.jian {
+	background-position: 0 0;
+}
+.cltextmun a.jia {
+	background-position: -24px 0;
+}
+span.blm {
+	display: block;
+	float: left;
+	margin: 3px 0 0 10px;
+}
+em#showmun, em#showprice, em.clrmb {
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 700;
+	color: #F40;
+	vertical-align: bottom;
+}
+.clxlbox select.clxl {
+	font-size: 14px;
+	max-width: 95%;
+	height: 24px;
+	color: #666;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.clxlbox select.clcpxl {
+	font-size: 16px;
+	max-width: 95%;
+	height: 25px;
+	color: #666;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.clxlbox select.cldqxl {
+	width: 30%;
+	height: 26px;
+	color: #666;
+	margin-right: 6px;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.cltextarea textarea {
+	width: 90%;
+	height: 40px;
+	color: #666;
+	padding: 4px 5px;
+	border: 1px solid #E0E0E0;
+	background: #FCFCFC;
+}
+.cltextcode input {
+	width: 40px;
+	font: 16px Arial;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.cltextcode img#clcode {
+	cursor: pointer;
+}
+.cltextcode a {
+	font-size: 12px;
+	margin-left: 6px;
+}
+.clsubbox {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.clsubbox input {
+	width: 95%;
+	height: 32px;
+	line-height: 32px;
+	color: #FFF;
+	font-size: 16px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 0;
+	-webkit-appearance: none;
+}
+.cltitlefh {
+	font-size: 16px;
+	color: #FFF;
+	margin-bottom: 12px;
+	padding: 8px;
+	background: #66CCFF;
+}
+.clfahuo {
+	width: 95%;
+	height: 200px;
+	font-size: 12px;
+	color: #666;
+	overflow: hidden;
+	position: relative;
+	background: none;
+}
+#clfahuo p {
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #CCC;
+}
+@media(min-width:640px) {
+.clfahuo {
+	width: 95%;
+	height: 200px;
+	font-size: 16px;
+	color: #666;
+	overflow: hidden;
+	position: relative;
+	background: none;
+}
+}
+
+.clpayps {
+	font-size: 12px;
+	color: #666;
+	padding-left: 27%;
+	line-height: 1.6em;
+}
+.clpayps p {
+	display: block;
+	float: left;
+	width: 92%;
+	padding: 2px 5px;
+	_margin-left: -3px;
+	text-align: center;
+	border: 1px dotted #E0E0E0;
+	background: #FFFFE6;
+}
+.green {
+	color: #090;
+}
+
+.phpyzm {
+	width: 50px;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	padding: 0 5px;
+	border: 1px solid #E0E0E0;
+	background: #FAFAFA;
+}
+/*///////////////////////////////////////// clORDERCSSEND ////////////////////////////////////////*/
